@@ -1,0 +1,52 @@
+@charset "UTF-8 ";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.game-board {
+  margin: 0 auto;
+  width: 80%;
+  height: 500px;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+.pipe {
+  width: 80px;
+  position: absolute;
+  bottom: 0;
+  /*Chamada para animação*/
+  animation: pipe-animation 2s infinite linear;
+ 
+}
+
+.mario {
+  width: 150px;
+  position: absolute;
+  bottom: 0;
+}
+
+@keyframes pipe-animation {
+  /*O inicio da animação*/
+  from {
+    right: -80px;
+  }
+  /*O fim da animação*/
+  to {
+    right: 100%;
+  }
+}
+
+
+@keyframes jump {
+  from {
+
+  }
+  to {
+    
+  }
+}
