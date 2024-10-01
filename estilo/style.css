@@ -42,6 +42,16 @@
 }
 
 
+.button-mobile {
+  position: absolute;
+  bottom: 0px;
+  right: 150px;
+  width: 100px;
+  height: 80px;
+  border-radius: 100%;
+  display: none;
+}
+
 
 @keyframes pipe-animation {
   /*O inicio da animação*/

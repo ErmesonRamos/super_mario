@@ -1,6 +1,20 @@
 const mario = document.querySelector('.mario')
 const pipe = document.querySelector('.pipe');
+const corpo = document.body;
+const button = document.querySelector('.button-mobile')
 
+
+function checkWidth() {
+  if (corpo.clientWidth <= 900 ) {
+    button.style.display = 'block';
+  } else {
+    button.style.display = 'none';
+  }
+}
+
+checkWidth();
+
+window.addEventListener('resize', checkWidth);
 
 const jump = () => {
   mario.classList.add('jump');
